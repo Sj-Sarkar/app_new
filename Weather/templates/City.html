@@ -1,0 +1,15 @@
+<html>
+<form method="post">
+    {% csrf_token %}
+    <center>
+    
+    Name : <input type="text" name='city' placeholder='Enter your City '><br><br>
+    <button type='submit'>Enter</button>
+    </center>
+</form>
+<h1>The Temperature at {{city}} is {{temp}} C</h1>
+<h1>Feels like {{feels}} C</h1>
+<h1>Weather is {{wind}}</h1>
+<h1>Pressure is {{press}}</h1>
+<h1>Humidity is {{humid}}</h1>
+</html>
